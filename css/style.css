@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  max-width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .fb-profile {
+  background: #242526;
+  color: #fff;
+  width: 40%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+main .fb-profile .profile-top {
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+  align-items: center;
+}
+main .fb-profile .profile-top .profile-up {
+  display: flex;
+  gap: 1rem;
+}
+main .fb-profile .profile-top .profile-up .up-img img {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  border-radius: 50%;
+  outline: 2px solid rgba(204, 204, 204, 0.8);
+  outline-offset: 1px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+main .fb-profile .profile-top .profile-up .up-content h5 {
+  font-size: 12px;
+  font-weight: 400;
+}
+main .fb-profile .profile-top .profile-up .up-content h5 a {
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+}
+main .fb-profile .profile-top .profile-up .up-content .date {
+  font-size: 12px;
+  display: inline-flex;
+  align-items: center;
+}
+main .fb-profile .profile-top .profile-up .up-content .date i {
+  margin-left: 5px;
+}
+main .fb-profile .profile-top .profile-dot {
+  font-size: 18px;
+  cursor: pointer;
+}
+main .fb-profile .post-status {
+  padding: 0 30px 30px;
+  position: relative;
+}
+main .fb-profile .post-thumb {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  background: #242526;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+main .fb-profile .post-thumb .user-image img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1.5px solid #ccc;
+}
+main .fb-profile .post-thumb::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background: url(../image/cover.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+main .fb-profile .post-rect {
+  padding: 10px 30px;
+  border: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+}
+main .fb-profile .post-rect .post-like {
+  display: flex;
+  align-items: center;
+}
+main .fb-profile .post-rect .post-like img {
+  width: 15px;
+  height: 15px;
+}
+main .fb-profile .post-rect .post-like span {
+  margin-left: 5px;
+  font-size: 13px;
+}
+main .fb-profile .post-rect .post-comment span {
+  font-size: 13px;
+}/*# sourceMappingURL=style.css.map */
